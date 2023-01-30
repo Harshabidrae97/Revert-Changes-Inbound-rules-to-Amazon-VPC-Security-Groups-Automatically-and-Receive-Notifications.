@@ -5,8 +5,8 @@ If one of your staff members (inadvertently | mischievously) modifies your VPC s
 
 Here is how the process works,
 
-    Someone adds a new ingress rule to your security group
-    A CloudWatch event that continually monitors changes to your security groups detects the new ingress rule and invokes Lambda function
-    Lambda function determines whether you are monitoring this security group
-        Reverts the new security group ingress rule.
-        Optionally: Sends you an SNS Notification email to let you know what the change was, who made it, and that the change was reverted
+   * Someone adds a new ingress rule to your security group
+   * A CloudWatch event that continually monitors changes to your security groups detects the new ingress rule and invokes Lambda function
+   * Lambda function determines whether you are monitoring this security group
+   * Reverts the new security group ingress rule.
+   *Optionally: Sends you an SNS Notification email to let you know what the change was, who made it, and that the change was reverted
