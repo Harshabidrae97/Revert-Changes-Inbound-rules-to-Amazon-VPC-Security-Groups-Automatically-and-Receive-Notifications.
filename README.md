@@ -22,8 +22,9 @@ We will need the following pre-requisites to successfully complete this activity
    * Note down the security group id, we will need it later to update the lambda function
    * IAM Role - i.e Lambda Service Role - with EC2FullAccess permissions
         You may use an Inline policy with more restrictive permissions
-Step 1 - Configure Lambda Function- SG-Sentry-Bot
-Step 2 - Configure Lambda Triggers
+
+# Step 1 - Configure Lambda Function- SG-Sentry-Bot
+# Step 2 - Configure Lambda Triggers
 
 We are going to use Cloudwatch Events that will be triggered by CloudTrail API
 
@@ -37,7 +38,7 @@ We are going to use Cloudwatch Events that will be triggered by CloudTrail API
     * Enable Trigger by Checking the box
     * Click on Add and Save the Lambda Function
     
-  Step 3 - Testing the solution
+ # Step 3 - Testing the solution
 
 * Navigate to the EC2 console and choose Security Groups and Choose the security group that we are monitoring. Add a new Inbound rule, for example SSH on   port 22 from 0.0.0.0/0.
 
